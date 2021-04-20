@@ -1,1 +1,48 @@
-
+~/cli-basics-assignment-Andy-Guo-13$ pwd
+/home/runner/cli-basics-assignment-Andy-Guo-13
+~/cli-basics-assignment-Andy-Guo-13$ mkdir CLIBasicsFolder
+~/cli-basics-assignment-Andy-Guo-13$ ls
+CLIBasicsFolder  README.md  TerminalSession.txt
+~/cli-basics-assignment-Andy-Guo-13$ cd CLIBasicsFolder
+~/cli-basics-assignment-Andy-Guo-13/CLIBasicsFolder$ touch myFile.txt
+~/cli-basics-assignment-Andy-Guo-13/CLIBasicsFolder$ echo Andy ICS4U >> myFile.txt
+~/cli-basics-assignment-Andy-Guo-13/CLIBasicsFolder$ cat myFile.txt
+Andy ICS4U
+~/cli-basics-assignment-Andy-Guo-13/CLIBasicsFolder$ cp myFile.txt myfile_copy.txt
+~/cli-basics-assignment-Andy-Guo-13/CLIBasicsFolder$ ls
+myfile_copy.txt  myFile.txt
+~/cli-basics-assignment-Andy-Guo-13/CLIBasicsFolder$ mv myfile_copy.txt myfile2.txt
+~/cli-basics-assignment-Andy-Guo-13/CLIBasicsFolder$ mv myFile.txt myfile.txt
+~/cli-basics-assignment-Andy-Guo-13/CLIBasicsFolder$ ls
+myfile2.txt  myfile.txt
+~/cli-basics-assignment-Andy-Guo-13/CLIBasicsFolder$ cat myfile.txt
+Andy ICS4U
+~/cli-basics-assignment-Andy-Guo-13/CLIBasicsFolder$ mv myfile2.txt ~myfile2.txt
+~/cli-basics-assignment-Andy-Guo-13/CLIBasicsFolder$ ls
+'~myfile2.txt'   myfile.txt
+~/cli-basics-assignment-Andy-Guo-13/CLIBasicsFolder$ cd ~
+~$ ls
+cli-basics-assignment-Andy-Guo-13  _test_runner.py
+~$ cd CLIBasicsFolder
+bash: cd: CLIBasicsFolder: No such file or directory
+~$ cd cli-basics-assignment-Andy-Guo-13/CLIBasicsFolder
+~/cli-basics-assignment-Andy-Guo-13/CLIBasicsFolder$ mv ~myfile2.txt myfile2.txt
+~/cli-basics-assignment-Andy-Guo-13/CLIBasicsFolder$ ls
+myfile2.txt  myfile.txt
+~/cli-basics-assignment-Andy-Guo-13/CLIBasicsFolder$ cat myfile2.txt
+Andy ICS4U
+~/cli-basics-assignment-Andy-Guo-13/CLIBasicsFolder$ mv myfile2.txt ~/myfile2.txt
+~/cli-basics-assignment-Andy-Guo-13/CLIBasicsFolder$ ls
+myfile.txt
+~/cli-basics-assignment-Andy-Guo-13/CLIBasicsFolder$ cd ~
+~$ ls
+cli-basics-assignment-Andy-Guo-13  myfile2.txt  _test_runner.py
+~$ cd cli-basics-assignment-Andy-Guo-13
+~/cli-basics-assignment-Andy-Guo-13$ rm CLIBasicsFolder/myfile.txt
+~/cli-basics-assignment-Andy-Guo-13$ ls CLIBasicsFolder
+~/cli-basics-assignment-Andy-Guo-13$ rmdir CLIBasicsFolder
+~/cli-basics-assignment-Andy-Guo-13$ ls
+README.md  TerminalSession.txt
+~/cli-basics-assignment-Andy-Guo-13$ cd ~
+~$ ls
+cli-basics-assignment-Andy-Guo-13  myfile2.txt  _test_runner.py
